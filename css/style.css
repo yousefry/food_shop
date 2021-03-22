@@ -1,0 +1,858 @@
+@font-face {
+    font-family: yekanFont;
+    src: url('font/yekan-font/Yekan.woff');
+    src: url('font/yekan-font/Yekan.woff?#iefix') format('FontName-opentype'),
+    url('font/yekan-font/Yekan.woff') format('woff'),
+    url('font/yekan-font/Yekan.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: yekanFont;
+    direction: rtl;
+    background-color: #f8f6f8;
+}
+
+.nav {
+    position: absolute;
+    z-index: 50;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+}
+
+.menu ul > li {
+    margin: 5px 20px;
+    padding: 5px 15px;
+    color: whitesmoke;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.menu ul > li:hover {
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    background-color: #fff;
+    color: black;
+}
+
+.loginOut {
+    color: white;
+    align-items: center;
+}
+
+.boxLog {
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.boxLog:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.container.header {
+    max-width: 1555px;
+    padding: 0;
+    height: 750px !important;
+    position: relative;
+}
+
+.inputSearch {
+    padding: 15px 51px 15px 5px;
+    width: 80%;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #e3e3e3;
+}
+
+.sectionSearch:after {
+    position: absolute;
+    content: "\f002";
+    font-family: FontAwesome;
+    top: 0.5rem;
+    right: 0.8rem;
+    font-size: 30px;
+    transform: rotate(90deg);
+    color: #e3e3e3;
+}
+
+.boxSearch > i {
+    right: 64px;
+    top: 5px;
+    font-size: 33px;
+    transform: rotate(90deg);
+    color: #e3e3e3;
+}
+
+.btnSearch {
+    padding: 10px 15px;
+    background-color: #c31331;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+}
+
+.btnSearch:hover {
+    color: white;
+}
+
+.category li {
+    width: 20%;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.c-nameFood {
+    position: relative;
+    padding: 2rem 0.5rem 0.4rem;
+}
+
+.nameFood {
+    position: absolute;
+    top: -35px;
+    right: 25%;
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+
+.time > span {
+    display: block;
+}
+
+.card-body {
+    padding: 1rem 0.2rem 0.2rem 0.2rem !important;
+}
+
+ul.starFood {
+    padding: 0px;
+    margin: 0;
+    color: yellow;
+}
+
+i.fa.fa-star {
+    filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.6));
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.boxCategoryPopular .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxCategoryPopular .item span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.boxCategoryPopular .content .item {
+    margin: 10px;
+}
+
+.boxIso {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.boxIso .description {
+    padding: 4px 35px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #383c47;
+}
+
+.c-footer {
+    color: #e2e1e1;
+}
+
+.c-item-footer .title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.c-item-footer .item {
+    font-size: 0.9rem;
+    margin: 15px;
+}
+
+.c-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputSendEmail {
+    height: 45px !important;
+    outline: unset;
+    padding-right: 10px;
+}
+
+.social {
+    color: white;
+}
+
+.sendEmailSocial .sendEmail, .sendEmailSocial .social {
+    display: block;
+}
+
+.cart {
+    color: black !important;
+    position: fixed;
+    width: 25rem;
+    height: 100%;
+    top: 0;
+    right: -400px;
+    border: 0;
+    background-color: #fff;
+    z-index: 101;
+    transition: right 0.5s ease;
+}
+
+.cart-empty {
+    font-weight: bold;
+    color: #3dd5f3;
+
+}
+
+.cart.show-cart, .sliderMenuMobile.show-menu {
+    right: 0px;
+    transition: right 0.5s ease;
+}
+
+.tog_overflow_body {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+
+.overlay.show-overlay {
+    display: block;
+}
+
+.yrModal {
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 8rem auto;
+    display: none;
+}
+
+.itemsBuy > .item {
+    padding: 15px 0px;
+    margin: 10px 0px;
+    border-top: 3px solid rgba(4, 189, 217, 0.2);
+}
+
+.itemsBuy .c-right {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.c-right .price, .item .price {
+    color: #31bdd9;
+}
+
+.counter {
+    margin-top: 10px;
+    color: darkgreen;
+    padding: 0px 10px;
+    border: 1px solid darkgreen;
+}
+
+.final_price .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.number_reg_lo {
+    outline: unset;
+    border-radius: 6px;
+    border: 1px solid #e9e1e1;
+    padding: 10px;
+    text-align: center;
+    /*background-color: unset;*/
+    z-index: 99 !important;
+    background-color: unset;
+    position: relative;
+}
+
+.field-input.login {
+    position: relative;
+}
+
+.field-input.login .number_reg_lo:focus {
+    border: 1px solid #b9aeae;
+}
+
+.field-input.login > div {
+    position: absolute;
+    top: 0.4rem !important;
+    right: 5.7rem;
+    background-color: #fff;
+    padding: 5px 10px;
+    transition: top 0.2s ease;
+    color: #dad4d4;
+    z-index: 98 !important;
+}
+
+.field-input.login .number_reg_lo.hasValue + div, .field-input.login .number_reg_lo:focus + div {
+    position: absolute;
+    top: -0.8rem !important;
+    font-size: 13px;
+    right: 5.8rem;
+    color: #a7a3a3;
+    background-color: #fff;
+    padding: 1px 10px;
+    transition: top 0.2s ease;
+    z-index: 99 !important;
+}
+
+.btnRegLog {
+    margin: 0 46px !important;
+    color: white;
+    background-color: #c31331;
+}
+
+.btnRegLog:hover {
+    color: white;
+}
+
+.menuMobile {
+    display: none;
+}
+
+.sliderMenuMobile {
+    color: black !important;
+    position: fixed;
+    width: 20rem;
+    height: 100%;
+    top: 0;
+    right: -400px;
+    /*right: 0px;*/
+    border: 0;
+    background-color: #fff;
+    z-index: 101;
+    transition: right 0.5s ease;
+}
+
+.sliderMenuMobile .contentSlider .details > img {
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.9));
+    width: 25% !important;
+    margin: 20px auto 0px auto;
+}
+
+.itemsMenuMobile {
+    padding-top: 5px;
+    height: 600px;
+    text-align: right;
+    background-color: #f3f3f3;
+}
+
+.logo {
+    width: 100px !important;
+}
+
+.items-food > .item > .image {
+    height: 70px !important;
+}
+
+.itemsMenuMobile > ul li {
+    margin: 15px 0px;
+}
+
+.h-foodPage {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.container.header.c-h-foodPage {
+    height: 70px !important;
+}
+
+/*                          Start Page Food                             */
+
+.cart-user {
+    position: sticky !important;
+    width: 100%;
+    top: 0;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.content-food {
+    flex-grow: 2;
+    padding: 5px;
+}
+
+/*                          End Page Food                             */
+
+.contentFoodPage {
+    width: 100%;
+
+}
+
+.cart-user {
+    margin-right: 24px;
+    z-index: 90;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    align-self: flex-start;
+    margin-bottom: 40px;
+    transition: top .3s ease;
+}
+
+.content-food {
+    width: 100% !important;
+    background-color: #f7f4f4;
+}
+
+.c-field {
+    padding: 10px;
+    color: green;
+}
+
+.c-field > .right {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.c-field > .left > .timeFood {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeFood > .bi-stopwatch {
+    position: absolute;
+    right: -38px;
+    top: 1px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.c-field .left .rate {
+    margin-top: 15px;
+}
+
+.rate > .countComment {
+    padding: 3px 10px;
+    border: 1px solid green;
+    border-radius: 6px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, span {
+    display: inline-block;
+}
+
+body {
+    direction: rtl;
+}
+
+.tab.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px 15px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.itemTab {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.itemTab .sheetTab {
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.itemTab .sheetTab > span {
+    color: #747474;
+    font-weight: bold;
+}
+
+.contentTab {
+    width: 100%;
+}
+
+.contentTab .content-tab {
+    width: 100%;
+    /*border: 1px solid rgba(74, 74, 74, 0.3);*/
+    border-top: none;
+    padding: 10px 10px 20px 10px;
+    display: none;
+
+}
+
+.itemTab .sheetTab.is-active {
+    background-color: #fff;
+    border-bottom: 3px solid #c31331;
+}
+
+.sheetTab > span > i {
+    margin-left: 5px;
+}
+
+.contentTab .content-tab.is-active {
+    display: block;
+}
+
+.content-tab.types > .items-food > .item {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 49%;
+    height: 100px !important;
+    position: relative;
+    margin: 5px 0;
+}
+
+.content-tab.types .price {
+    margin-top: 15px;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.content-tab.types .offNumber {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 0 50% 50% 50%;
+    left: 5px;
+    top: 5px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.content-tab.types .addToCart {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 5px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.content-tab.comments > .content {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.content-tab.comments .itemsComment {
+    margin-top: 15px;
+}
+
+.content-tab.comments .itemsComment .item {
+    border-top: 2px solid #f7f4f4;
+    border-bottom: 2px solid #f7f4f4;
+    padding: 10px 3px;
+}
+
+.body-comment {
+    margin: 15px 3px;
+
+}
+
+.footer-comment {
+    margin: 10px 3px;
+}
+
+.footer-comment .details {
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.footer-comment .details span {
+    display: inline-block;
+}
+
+.footer-comment .foodName {
+    border-left: 1px solid green;
+    padding-left: 5px;
+}
+
+.footer-comment .fa.fa-star {
+    color: yellow;
+}
+
+.cart-food {
+    display: none;
+}
+
+/****************************************************************/
+
+.dropDown_name {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: black !important;
+    background-color: #d9d8d8;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropDown_name > i {
+    transition: all 0.5s ease;
+}
+
+.rotate180Deg {
+    transform: rotate(180deg);
+
+    transition: all 0.5s ease;
+}
+
+.content-tab.infoUser, .content-tab.favoriteList, .content-tab.defaultMenu {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.field-userInfo {
+    width: 30% !important;
+    text-align: right !important;
+    margin: 5px 10px;
+}
+
+.content-tab.infoUser .content {
+    width: 70%;
+    margin: 0 auto !important;
+}
+
+.field-userInfo.w-100 {
+    width: 94% !important;
+}
+
+.content-tab.infoUser > label > .userInfo_img {
+    border-radius: 50%;
+    width: 100% !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.userInfo_sel-img {
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: top 0.2s ease;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.selectImageUser {
+    display: none;
+}
+
+.userInfo_img:hover .userInfo_sel-img {
+    top: 0;
+    transition: top 0.2s ease;
+}
+
+.content-tab.infoUser > label {
+    width: 10% !important;
+    margin: 0 auto;
+}
+
+.item_off {
+
+}
+
+.item_off .off {
+    color: white;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 0px 50% 50% 50%;
+}
+
+.item_off .plus {
+    bottom: 5px;
+    left: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.item_off.card-body {
+    padding: 0 !important;
+}
+
+.content-tab.favoriteList > .items-food > .card {
+    margin: 5px;
+}
+
+.items-food > .card > i.fa {
+    color: whitesmoke;
+    font-weight: bold;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.5));
+}
+
+.contentDefaultMenu .dropDown_name {
+    color: black;
+}
+
+.contentDefaultMenu > .item {
+    padding: 0;
+    /*margin: 0;*/
+    text-align: center;
+    width: 28%;
+
+    margin: 15px !important;
+}
+
+.contentDefaultMenu > .item > .select {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.contentDefaultMenu .dropDown_name {
+    padding: 5px !important;
+}
+
+.contentDefaultMenu .dropdown, .contentDefaultMenu .dropDown_name, .contentDefaultMenu .dropdown-content {
+    width: 100%;
+}
+
+.item .dropdown .dropDown_name i.fa.fa-caret-down {
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+
+.content-tab.defaultMenu .contentDefaultMenu {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+.contentDefaultMenu .dropdown-content a {
+    padding: 4px;
+    text-align: right;
+}
+
+.updateMenuFood .search_food {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 100% !important;
+    margin-top: 15px;
+}
+
+#btn-inp-add_food {
+    background-color: #c31313;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contentModal .updateMenuFood .input-group {
+    margin-top: 25px;
+}
+
+.divContent.updateMenuFood .listFood .item {
+    width: 22% !important;
+    margin: 10px;
+}

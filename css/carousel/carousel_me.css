@@ -1,0 +1,94 @@
+
+.owl-item {
+    width: 450px;
+    height: 300px;
+
+}
+
+.owl-stage-outer {
+
+}
+
+.owl-prev {
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 5%;
+    height: 95%;
+    text-align: center;
+    box-shadow: 8px 0px 25px -15px black;
+    user-select: none;
+}
+
+.owl-prev > span {
+    display: inline-block;
+    margin-top: 210%;
+    opacity: 0.5;
+    user-select: none;
+    font-weight: bold;
+}
+
+.owl-prev > span:hover {
+    display: inline-block;
+    margin-top: 210%;
+    opacity: 1;
+    user-select: none;
+}
+
+.owl-next {
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 5%;
+    height: 95%;
+    text-align: center;
+    box-shadow: -8px 0px 25px -15px black;
+    user-select: none;
+}
+
+.owl-next > span {
+    display: inline-block;
+    margin-top: 210%;
+    opacity: 0.5;
+    user-select: none;
+    font-weight: bold;
+}
+
+.owl-next > span:hover {
+    display: inline-block;
+    margin-top: 210%;
+    opacity: 1;
+    user-select: none;
+}
+
+.owl-carousel {
+    padding: 0 5%;
+    position: relative;
+}
+
+#demos {
+    margin-right: 5%;
+}
+
+.carouselSlider {
+    padding: 10px 80px;
+
+
+}
+
+.carouselSlider > p, .titlePanel >span, .titlePanel{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    background-color: #f7f9fa;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.owl-stage-outer{
+    padding-top: 20px;
+    background-color: white;
+}

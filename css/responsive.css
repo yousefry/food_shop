@@ -1,0 +1,146 @@
+.c-footer {
+    display: unset;
+}
+
+.linkFooter {
+    display: unset !important;
+}
+
+.boxIso > .content {
+    display: unset !important;
+}
+
+.iconIso {
+    margin: 20px;
+}
+
+.container.header {
+    height: 50% !important;
+}
+
+.header > img {
+    height: 50% !important;
+}
+
+.menu {
+    display: none !important;
+}
+
+.boxCategoryPopular .content .item {
+    width: 44% !important;
+}
+
+.descriptionMain .content {
+    width: 85% !important;
+    text-align: justify !important;
+    font-size: 13px !important;
+}
+
+.descriptionMain .title {
+    font-size: 17px !important;
+}
+
+.btnSearch {
+    font-size: 12px !important;
+}
+
+.inputSearch {
+    padding: 6px 51px 9px 5px !important;
+    width: 70% !important;
+}
+
+.sectionSearch:after {
+    top: 0rem !important;
+}
+
+.input {
+    width: 100% !important;
+}
+
+.icon-social > li {
+    margin: 0 10px;
+}
+
+.logo {
+    width: 20% !important;
+}
+
+.log > .bi-cart {
+    font-size: 20px !important;
+}
+
+.boxLog {
+    font-size: 10px;
+}
+
+.cart {
+    width: 20rem !important;
+}
+
+.yrModal {
+    width: 360px !important;
+}
+
+.menuMobile {
+    display: block;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.cart-user {
+    display: none;
+}
+
+.content-tab.types > .items-food > .item {
+    width: 100%;
+}
+
+.cart-food {
+    display: block;
+}
+
+.head-comment > img {
+    width: 10% !important;
+}
+
+.items-food > .item > .image {
+    width: 25% !important;
+}
+
+.timeFood > .bi-stopwatch {
+    position: absolute;
+    right: -22px;
+    top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.itemTab {
+    font-size: 12px;
+}
+
+.content-tab.infoUser > label > .userInfo_img {
+    width: 100% !important;
+}
+
+.field-userInfo {
+    width: 100% !important;
+}
+
+.items-food .card {
+    margin: 10px auto !important;
+}
+
+.contentDefaultMenu > .item {
+    width: 100%;
+}
+
+.content-tab.infoUser > label {
+    width: 45% !important;
+    margin: 0 auto;
+}
+
+.divContent.updateMenuFood .listFood .item {
+    width: 43% !important;
+    margin: 10px;
+}

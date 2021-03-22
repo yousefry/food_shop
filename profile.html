@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_yr.css">
+    <link rel="stylesheet" href="css/font/bootstrap-font/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/responsive.css" media="(max-width:991px)">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <section class="rightSlide">
+        <div class="cart">
+            <div class="contentSlider position-relative text-center">
+                <span class="title mt-2 d-inline-block">سبد خرید شما</span>
+                <i class="fa fa-times left-0 fos-20 closeSlider position-absolute p-2 cursor-pointer"
+                   style="color: black"></i>
+                <div class="details m-center text-center">
+                    <img src="image/fig-cart-empty.png" class="w-100 mt-5" alt="">
+                    <span class="cart-empty fos-20">سبد خرید شما خالی است</span>
+                    <div class="itemsBuy mt-30 p-2">
+                        <div class="item d-flex justify-content-between">
+                            <div class="c-right d-flex">
+                                <span class="fos-15 fow">پیتزای مخصوص</span>
+                                <span class="fos-15 price mt-1"> 36000 تومان</span>
+                            </div>
+                            <div class="c-left">
+                                <div class="counter br-6">
+                                    <i class="fa fa-plus cursor-pointer ml-10 plu-count-food"></i>
+                                    <span class="countFood fos-20 fow">2</span>
+                                    <i class="fa fa-minus cursor-pointer mr-10 minu-count-food"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item off_price d-flex justify-content-between">
+                            <span class="fos-15 fow">تخفیف</span>
+                            <span class="fos-15 price mt-1"> 36000 تومان</span>
+                        </div>
+
+                        <div class="item final_price d-flex justify-content-between">
+                            <span class="fos-15 fow">هزینه کل</span>
+                            <div class="fos-15 price mt-1">
+                                <div class="o-price d-flex ">
+                                    <del style="color: red">36000 تومان</del>
+                                </div>
+                                <div class="final-price fos-20">36000 تومان</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-success w-100">پرداخت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sliderMenuMobile">
+            <div class="contentSlider position-relative text-center">
+                <!--                        <span class="title mt-2 d-inline-block">منو موبایل</span>-->
+                <i class="fa fa-times left-0 fos-20 closeSlider position-absolute p-2 cursor-pointer"
+                   style="color: black"></i>
+                <div class="details m-center text-center">
+                    <img src="image/icon_iso/logoSite.png" class="w-100" alt="">
+                    <div class="itemsMenuMobile" style="color: black">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    صفحه اصلی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    پیتزا
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    ساندویچ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    سوخاری
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    درباره ما
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container header c-h-foodPage">
+        <nav class="nav top-0 w-100 align-items-baseline d-flex h-foodPage justify-content-between">
+            <div class="loginOut p-2">
+                <div class="log d-flex  align-items-baseline cursor-pointer">
+                    <i class="fa fa-bars menuMobile"></i>
+                    <i class="bi bi-cart ml-10 fos-25 cartUser cart-food"></i>
+                    <div class="boxLog btnModal" data-modal="login_logout">
+                        <i class="bi bi-person"></i>
+                        <span>ورود / ثبت نام</span>
+                    </div>
+                    <div class="dropdown btn-dropDown">
+                        <span class="dropDown_name">یوسف ریشهری <i class="fa fa-caret-down"></i></span>
+                        <div class="dropdown-content fos-12">
+                            <a href="#">پروفایل</a>
+                            <a href="#">خروج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu d-flex ">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>صفحه اصلی</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>ساندویچ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>پیتزا</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>سوخاری</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo ">
+                <img src="image/icon_iso/logoSite.png" class="w-100" alt="">
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="container-fluid p-0 mainProfilePage">
+    <div class="contentProfile container">
+        <div class="tab">
+            <ul class="itemTab d-flex justify-content-center">
+                <li id="infoUser" class="sheetTab is-active">
+                    <span><i class="fa fa-user"></i>اطلاعات کاربری</span>
+                </li>
+                <li id="favoriteList" class="sheetTab ">
+                    <span><i class="fa fa-heart"></i> علاقه مندی ها </span>
+                </li>
+                <li id="defaultMenu" class="sheetTab ">
+                    <span><i class="bi bi-menu-app-fill"></i> منو پیشفرض </span>
+                </li>
+            </ul>
+            <div class="contentTab">
+                <div class="content-tab infoUser text-center is-active">
+                    <label>
+                        <div class="userInfo_img m-center">
+                            <img src="image/default.png" class="w-100" alt="">
+                            <div class="userInfo_sel-img">
+                                <i class="fa fa-camera" style="color: whitesmoke"></i>
+                            </div>
+                        </div>
+                        <input type="file" class="selectImageUser">
+                    </label>
+                    <div class="content d-flex justify-content-center flex-wrap">
+                        <div class="field-userInfo">
+                            <label for="userInfo_FullName" class="form-label">نام و نام خانوادگی</label>
+                            <input type="text" class="form-control" id="userInfo_FullName">
+                        </div>
+                        <div class="field-userInfo">
+                            <label for="userInfo_mobile" class="form-label">شماره موبایل</label>
+                            <input type="text" class="form-control" id="userInfo_mobile">
+                        </div>
+                        <div class="field-userInfo">
+                            <label for="userInfo_email" class="form-label">ایمیل</label>
+                            <input type="text" class="form-control" id="userInfo_email">
+                        </div>
+                        <div class="field-userInfo">
+                            <label for="userInfo_natCode" class="form-label">کد ملی</label>
+                            <input type="text" class="form-control" id="userInfo_natCode">
+                        </div>
+                        <div class="field-userInfo">
+                            <label for="userInfo_tell" class="form-label">تلفن ثابت</label>
+                            <input type="text" class="form-control" id="userInfo_tell">
+                        </div>
+                        <div class="field-userInfo mt-3">
+                            <label for="userInfo_news" class="form-label">عضویت در خبررسان</label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="userInfo_news" checked>
+                            </div>
+                        </div>
+                        <div class="field-userInfo w-100">
+                            <label for="userInfo_address" class="form-label">آدرس</label>
+                            <input type="text" class="form-control" id="userInfo_address">
+                        </div>
+                        <button class="btn btn-success mt-4 w-50 m-center">ثبت اطلاعات</button>
+                    </div>
+                </div>
+                <div class="content-tab favoriteList ">
+                    <di class="items-food d-flex flex-wrap justify-content-start">
+                        <div class="card position-relative" style="width: 15rem;">
+                            <i class="fa fa-heart position-absolute"></i>
+                            <img src="image/burger-3442227_1920.jpg" class="card-img-top">
+                            <div class="item_off card-body position-relative">
+                                <h5 class="card-title fos-17 mb-20  ">پیتزای مخصوص</h5>
+                                <p class="card-text fos-13 mt-40">دسته بندی : پیتزا</p>
+                                <p class="card-text position-absolute off">%25</p>
+                                <p class="card-text position-absolute plus"><i class="fa fa-plus"></i></p>
+                            </div>
+                        </div>
+                        <div class="card position-relative" style="width: 15rem;">
+                            <i class="fa fa-heart position-absolute"></i>
+                            <img src="image/burger-3442227_1920.jpg" class="card-img-top">
+                            <div class="item_off card-body position-relative">
+                                <h5 class="card-title fos-17 mb-20  ">پیتزای مخصوص</h5>
+                                <p class="card-text fos-13 mt-40">دسته بندی : پیتزا</p>
+                                <p class="card-text position-absolute off">%25</p>
+                                <p class="card-text position-absolute plus"><i class="fa fa-plus"></i></p>
+                            </div>
+                        </div>
+                        <div class="card position-relative" style="width: 15rem;">
+                            <i class="fa fa-heart position-absolute"></i>
+                            <img src="image/burger-3442227_1920.jpg" class="card-img-top">
+                            <div class="item_off card-body position-relative">
+                                <h5 class="card-title fos-17 mb-20  ">پیتزای مخصوص</h5>
+                                <p class="card-text fos-13 mt-40">دسته بندی : پیتزا</p>
+                                <p class="card-text position-absolute off">%25</p>
+                                <p class="card-text position-absolute plus"><i class="fa fa-plus"></i></p>
+                            </div>
+                        </div>
+                        <div class="card position-relative" style="width: 15rem;">
+                            <i class="fa fa-heart position-absolute"></i>
+                            <img src="image/burger-3442227_1920.jpg" class="card-img-top">
+                            <div class="item_off card-body position-relative">
+                                <h5 class="card-title fos-17 mb-20  ">پیتزای مخصوص</h5>
+                                <p class="card-text fos-13 mt-40">دسته بندی : پیتزا</p>
+                                <p class="card-text position-absolute off">%25</p>
+                                <p class="card-text position-absolute plus"><i class="fa fa-plus"></i></p>
+                            </div>
+                        </div>
+                        <div class="card position-relative" style="width: 15rem;">
+                            <i class="fa fa-heart position-absolute"></i>
+                            <img src="image/burger-3442227_1920.jpg" class="card-img-top">
+                            <div class="item_off card-body position-relative">
+                                <h5 class="card-title fos-17 mb-20  ">پیتزای مخصوص</h5>
+                                <p class="card-text fos-13 mt-40">دسته بندی : پیتزا</p>
+                                <p class="card-text position-absolute off">%25</p>
+                                <p class="card-text position-absolute plus"><i class="fa fa-plus"></i></p>
+                            </div>
+                        </div>
+                        <div class="card position-relative" style="width: 15rem;">
+                            <i class="fa fa-heart position-absolute"></i>
+                            <img src="image/burger-3442227_1920.jpg" class="card-img-top">
+                            <div class="item_off card-body position-relative">
+                                <h5 class="card-title fos-17 mb-20  ">پیتزای مخصوص</h5>
+                                <p class="card-text fos-13 mt-40">دسته بندی : پیتزا</p>
+                                <p class="card-text position-absolute off">%25</p>
+                                <p class="card-text position-absolute plus"><i class="fa fa-plus"></i></p>
+                            </div>
+                        </div>
+                    </di>
+                </div>
+                <div class="content-tab defaultMenu ">
+                    <div class="contentDefaultMenu d-flex flex-wrap justify-content-start">
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item d-flex">
+                            <div class="select">
+                                <div class="dropdown btn-dropDown">
+                                    <span class="dropDown_name d-flex justify-content-between">منو شماره 1 <i
+                                            class="fa fa-caret-down"></i></span>
+                                    <div class="dropdown-content fos-12">
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/burger-3442227_1920.jpg" class="w-20" alt="">
+                                            <span class="name mr-5">پیتزای مخصوص</span>
+                                        </a>
+
+                                        <button class="btn btn-success w-100 fos-12">افزودن - قیمت سفارش 145000 تومان
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fa fa-edit cursor-pointer btnModal" data-modal="add_to_menu"></i>
+                                <i class="fa fa-trash cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success d-block m-center">ایجاد منو سفارش</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer container-fluid">
+        <div class="c-footer container">
+            <div class="linkFooter d-flex">
+                <div class="c-item-footer">
+                    <ul>
+                        <li class="title">
+                            <a href="">
+                                بیشتر بدانید
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                قوانین سایت
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                پرسش های متداول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                وبلاگ
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                سفارش غذا
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                راهنمای پرداخت
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                بسته های خدمات
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                همکاری
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-item-footer">
+                    <ul>
+                        <li class="title">
+                            <a href="">
+                                بیشتر بدانید
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                قوانین سایت
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                پرسش های متداول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                وبلاگ
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                سفارش غذا
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                راهنمای پرداخت
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                بسته های خدمات
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="">
+                                همکاری
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sendEmailSocial text-center">
+                <div class="sendEmail text-center w-100">
+                    <div class="title fos-20 fow mb-10">عضویت در خبرنامه</div>
+                    <div class="desc fos-15 text-justify w-75 m-center mb-30">
+                        برای عضویت در خبرنامه و دریافت جدیدترین مطالب تخفیف ها و جشنواره ها ایمیل خود را وارد کنید
+                    </div>
+                    <div class="input w-75 m-center mt-30">
+                        <input type="text" class="inputSendEmail w-75 br-9"
+                               placeholder="ایمیل ">
+                        <button class="btn btn-primary">عضویت</button>
+                    </div>
+                </div>
+                <div class="social w-50 m-center mt-30">
+                    <ul class="icon-social d-flex fos-25 justify-content-around">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="overlay">
+    <div class="yrModal modalLogin position-relative" data-modal-content="modal-login_logout" style="height: 300px">
+        <i class="fa fa-times fa fa-times left-0 fos-20 closeModal position-absolute p-2 cursor-pointer"></i>
+        <div class="contentModal p-3">
+            <div class="title text-center mt-2">برای ورود یا ثبت نام شماره موبایلت رو وارد کن</div>
+            <div class="field-input login w-75 mt-40 m-center">
+                <input type="text" maxlength="13" class="w-100 number_reg_lo" style="z-index: 91">
+                <div style="z-index: 90">شماره موبایل</div>
+            </div>
+            <button class="btnRegLog btn mt-40 w-75">ادامه</button>
+        </div>
+    </div>
+    <div class="yrModal modalLogin position-relative" data-modal-content="modal-add_to_menu"
+         style="width: 60%;height: auto">
+        <i class="fa fa-times fa fa-times left-0 fos-20 closeModal position-absolute p-2 cursor-pointer"></i>
+        <div class="contentModal p-3">
+            <div class="title text-center mt-2">ویرایش منوی غذای شماره 1</div>
+            <div class="divContent updateMenuFood">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="btn-inp-add_food">+</span>
+                    </div>
+                    <input type="text" class="form-control" list="search_food" placeholder="اسم غذا رو وارد کن"
+                           aria-describedby="btn-inp-add_food">
+                    <datalist id="search_food" style="display: none">
+                        <option value="پیتزا مخصوص">
+                        <option value="پیتزا قارچ">
+                        <option value="پیتزا معمولی">
+                        <option value="ساندویچ مخصوص">
+                        <option value="ساندویچ معمولی">
+                        <option value="ساندویچ بندری">
+                    </datalist>
+                </div>
+                <div class="listFood mt-20 d-flex flex-wrap justify-content-start">
+                    <div class="item w-25 position-relative">
+                        <i class="fa fa-trash-o position-absolute cursor-pointer"
+                           style="color: white;left: 0;padding: 10px"></i>
+                        <img src="image/snack-2635035_1920-2.jpg" class="w-100 br-5" alt="">
+                        <span class="fos-13">پیتزای مخصوص</span>
+                    </div>
+                    <div class="item w-25 position-relative">
+                        <i class="fa fa-trash-o position-absolute cursor-pointer"
+                           style="color: white;left: 0;padding: 10px"></i>
+                        <img src="image/snack-2635035_1920-2.jpg" class="w-100 br-5" alt="">
+                        <span class="fos-13">پیتزای مخصوص</span>
+                    </div>
+                    <div class="item w-25 position-relative">
+                        <i class="fa fa-trash-o position-absolute cursor-pointer"
+                           style="color: white;left: 0;padding: 10px"></i>
+                        <img src="image/snack-2635035_1920-2.jpg" class="w-100 br-5" alt="">
+                        <span class="fos-13">پیتزای مخصوص</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-b.js"></script>
+<script src="js/oweCarousel/owl.carousel.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/jq.js"></script>
+<script>
+    var owlSliderPopular = $('.sliderPopular,.sliderMostSales');
+    owlSliderPopular.owlCarousel({
+        rtl: true,
+        items: 5,
+        dots: false,
+        nav: true,
+        loop: true,
+        margin: 10,
+        // navText: ["<i>&#10148;</i>", "<i style='transform: rotate(180deg)'>&#10148;</i>"],
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1.20
+            }, 320: {
+                items: 1.25
+            }, 375: {
+                items: 1
+            }, 600: {
+                items: 2
+            }, 768: {
+                items: 3
+            }, 1024: {
+                items: 4
+            }, 1200: {
+                items: 4
+            }
+        }
+    })
+</script>
+<script>
+    function name(num) {
+        let prime = true;
+        for (let i = 2; i < num; i++) {
+            prime = (num % i == 0) ? false : true;
+            if (!prime)
+                break;
+        }
+        return prime;
+    }
+    console.log(name(2))
+    console.log(name(35))
+</script>
+</html>
